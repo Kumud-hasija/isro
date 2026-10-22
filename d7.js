@@ -1,0 +1,110 @@
+/* Three-year trend analysis — replaces the two-year version in d4.js */
+window.ISRO.trendsHTML = [
+'<div class="card">',
+'<h2>Three papers measured: 2020, 2023, 2025</h2>',
+'<p>All three captured in full from the official review, so these counts are measured rather than estimated. 2020: 77 questions / 231 marks. 2023: 93 / 254. 2025: 95 / 260. Subject questions carry 3 marks throughout.</p>',
+'<p><b>Adding 2020 changed the picture substantially.</b> Several trends that looked like noise across two papers are clean monotonic lines across three.</p>',
+'<table><thead><tr><th>Subject</th><th class="n">2020</th><th class="n">2023</th><th class="n">2025</th><th>Shape</th><th class="n">2026</th></tr></thead><tbody>',
+'<tr><td><b>Computer Networks</b></td><td class="n">5</td><td class="n">10</td><td class="n">15</td><td class="up">+5, +5 &mdash; perfectly linear</td><td class="n"><b>15&ndash;18</b></td></tr>',
+'<tr><td><b>AI, Data Science &amp; Cloud</b></td><td class="n">0</td><td class="n">5</td><td class="n">11</td><td class="up">created, then doubled</td><td class="n"><b>12&ndash;14</b></td></tr>',
+'<tr><td><b>Computer Org. &amp; Architecture</b></td><td class="n">12</td><td class="n">5</td><td class="n">0</td><td class="down">&minus;7, &minus;5 &mdash; monotonic collapse</td><td class="n"><b>0&ndash;2</b></td></tr>',
+'<tr><td>General Aptitude</td><td class="n">1</td><td class="n">15</td><td class="n">14</td><td>step change, then stable</td><td class="n">14&ndash;15</td></tr>',
+'<tr><td><b>Operating System</b></td><td class="n">10</td><td class="n">9</td><td class="n">9</td><td>flat</td><td class="n"><b>9</b></td></tr>',
+'<tr><td><b>Digital Logic &amp; Design</b></td><td class="n">7</td><td class="n">7</td><td class="n">7</td><td>identical three times</td><td class="n"><b>7</b></td></tr>',
+'<tr><td>Databases</td><td class="n">4</td><td class="n">7</td><td class="n">7</td><td>rose then flat</td><td class="n">7</td></tr>',
+'<tr><td>Data Structures</td><td class="n">7</td><td class="n">4</td><td class="n">1</td><td class="down">&minus;3, &minus;3 &mdash; linear decline</td><td class="n">1&ndash;2</td></tr>',
+'<tr><td>Compiler Design</td><td class="n">7</td><td class="n">3</td><td class="n">3</td><td>fell then flat</td><td class="n">3</td></tr>',
+'<tr><td>Algorithms</td><td class="n">7</td><td class="n">5</td><td class="n">4</td><td class="down">slow decline</td><td class="n">4</td></tr>',
+'<tr><td>Theory of Computation</td><td class="n">5</td><td class="n">7</td><td class="n">5</td><td>stable around 5&ndash;7</td><td class="n">5&ndash;6</td></tr>',
+'<tr><td>Software Engineering</td><td class="n">5</td><td class="n">4</td><td class="n">7</td><td>noisy, mildly up</td><td class="n">6&ndash;7</td></tr>',
+'<tr><td>Programming &amp; C</td><td class="n">5</td><td class="n">1</td><td class="n">1</td><td class="down">collapsed then flat</td><td class="n">1</td></tr>',
+'<tr><td>Discrete Mathematics</td><td class="n">1</td><td class="n">6</td><td class="n">6</td><td>rose then flat</td><td class="n">6</td></tr>',
+'<tr><td>Engineering Mathematics</td><td class="n">1</td><td class="n">3</td><td class="n">4</td><td class="up">slow rise</td><td class="n">4</td></tr>',
+'<tr><td>OOP &amp; Java</td><td class="n">0</td><td class="n">1</td><td class="n">1</td><td>token presence</td><td class="n">1</td></tr>',
+'<tr><td>Web Technologies</td><td class="n">0</td><td class="n">1</td><td class="n">0</td><td>token, intermittent</td><td class="n">0&ndash;1</td></tr>',
+'<tr class="tot"><td>Total</td><td class="n">77</td><td class="n">93</td><td class="n">95</td><td>&mdash;</td><td class="n">~95</td></tr>',
+'</tbody></table>',
+'</div>',
+
+'<div class="card">',
+'<h2>What the third data point revealed</h2>',
+
+'<h3>1. Computer Networks is growing on a straight line</h3>',
+'<div class="bars">',
+'<div class="brow"><span>2020</span><div class="btrack"><div class="bfill" style="width:33%"></div></div><span class="bnum">5 Q</span></div>',
+'<div class="brow"><span>2023</span><div class="btrack"><div class="bfill" style="width:66%"></div></div><span class="bnum">10 Q</span></div>',
+'<div class="brow"><span>2025</span><div class="btrack"><div class="bfill" style="width:100%"></div></div><span class="bnum">15 Q</span></div>',
+'</div>',
+'<p>5 &rarr; 10 &rarr; 15. Exactly +5 each cycle, across two independent intervals. That is as clean as trend data gets. At 45 marks it is already the largest subject; whether it continues to 18&ndash;20 or plateaus is the main open question in this forecast.</p>',
+
+'<h3>2. COA is being retired, not fluctuating</h3>',
+'<div class="bars">',
+'<div class="brow"><span>2020</span><div class="btrack"><div class="bfill b2" style="width:100%"></div></div><span class="bnum">12 Q &middot; 36 mk</span></div>',
+'<div class="brow"><span>2023</span><div class="btrack"><div class="bfill b2" style="width:42%"></div></div><span class="bnum">5 Q &middot; 15 mk</span></div>',
+'<div class="brow"><span>2025</span><div class="btrack"><div class="bfill b2" style="width:1%"></div></div><span class="bnum">0 Q &middot; 0 mk</span></div>',
+'</div>',
+'<p><b>This is the most important revision.</b> On two data points (5 &rarr; 0) I forecast a partial return to 2&ndash;3 questions, on the reasoning that a subject rarely stays at zero. Three points show 12 &rarr; 5 &rarr; 0 &mdash; a monotonic collapse from being the <i>largest</i> subject in the paper to absent. That is deliberate removal, not noise.</p>',
+'<p><b>Revised forecast: 0&ndash;2 questions.</b> If you were planning to study cache organisation, pipelining and addressing modes for this exam, that time is better spent elsewhere. Keep only enough to attempt a stray question.</p>',
+
+'<h3>3. The 2020 paper was a different exam</h3>',
+'<p>In 2020 there was <b>one</b> General Aptitude question. In 2023 there were fifteen. ISRO added an aptitude section between those years, and it has stayed at 14&ndash;15. Similarly, AI/Data Science/Cloud did not exist in 2020 at all.</p>',
+'<p>Practical consequence: <b>2020 and earlier papers are good for subject practice but poor for predicting structure.</b> Use them to drill Digital Logic, OS and TOC &mdash; which are stable &mdash; and ignore their weighting entirely.</p>',
+
+'<h3>4. Three subjects have not moved at all</h3>',
+'<p><b>Digital Logic: 7, 7, 7.</b> Identical across three papers. <b>Operating Systems: 10, 9, 9.</b> <b>Databases: 4, 7, 7.</b> These are the safest places to invest preparation time &mdash; 23 questions and 69 marks that have behaved predictably for five years.</p>',
+'</div>',
+
+'<div class="card">',
+'<h2>Where the marks actually are for 2026</h2>',
+'<table><thead><tr><th>Priority</th><th>Subjects</th><th class="n">Forecast marks</th><th>Why</th></tr></thead><tbody>',
+'<tr><td><b>1 &mdash; Highest</b></td><td>Computer Networks + security</td><td class="n">~45&ndash;54</td><td>Linear growth, already largest, and half of it is cryptography/security</td></tr>',
+'<tr><td><b>2</b></td><td>AI, Data Science &amp; Cloud</td><td class="n">~36&ndash;42</td><td>Still growing; pure recall; absent from GATE so widely unprepared</td></tr>',
+'<tr><td><b>3</b></td><td>OS + Digital Logic + Databases</td><td class="n">~69</td><td>Rock stable for five years; reliable return on study time</td></tr>',
+'<tr><td><b>4</b></td><td>General Aptitude</td><td class="n">~18</td><td>Stable since introduced; needs technique, not content</td></tr>',
+'<tr><td><b>5</b></td><td>Discrete Maths, TOC, Soft. Eng., Algorithms, Eng. Maths</td><td class="n">~75</td><td>Mid-weight and stable</td></tr>',
+'<tr><td><b>6 &mdash; Lowest</b></td><td>COA, Data Structures, Compiler, Programming &amp; C, OOP</td><td class="n">~18</td><td>All in decline or token presence</td></tr>',
+'</tbody></table>',
+'<p>Note that priorities 1 and 2 together are roughly <b>80&ndash;96 marks of a 260-mark paper</b> &mdash; around a third &mdash; and both are outside the standard GATE CS syllabus.</p>',
+'</div>',
+
+'<div class="card">',
+'<h2>Recurring question shapes across all three papers</h2>',
+'<p>These templates appear every time. Drill them as techniques, not as facts.</p>',
+'<table><thead><tr><th>Shape</th><th>2020</th><th>2023</th><th>2025</th></tr></thead><tbody>',
+'<tr><td>Grammar &rarr; closed form</td><td>Q40</td><td>Q30, Q84</td><td>Q17, Q77</td></tr>',
+'<tr><td>Minimal DFA state count</td><td>Q38</td><td>Q29</td><td>Q18</td></tr>',
+'<tr><td>Grammar ambiguity</td><td>Q19</td><td>Q5</td><td>Q78</td></tr>',
+'<tr><td>Tree traversal</td><td>Q56, Q60</td><td>Q19, Q62</td><td>Q52</td></tr>',
+'<tr><td>Normalisation</td><td>Q29</td><td>Q22</td><td>Q70</td></tr>',
+'<tr><td>Sorting trace identification</td><td>Q46</td><td>&mdash;</td><td>Q91</td></tr>',
+'<tr><td>Page replacement / scheduling</td><td>Q48, Q49</td><td>Q79</td><td>Q57&ndash;59</td></tr>',
+'<tr><td>Cyclomatic complexity</td><td>Q10</td><td>&mdash;</td><td>Q21</td></tr>',
+'<tr><td>Four-item matching</td><td>&mdash;</td><td>Q11, Q39, Q79, Q89</td><td>Q43, Q48, Q79, Q93</td></tr>',
+'<tr><td>Euler&rsquo;s formula</td><td>&mdash;</td><td>Q74</td><td>Q50</td></tr>',
+'<tr><td>Determinant by dependence</td><td>&mdash;</td><td>Q24</td><td>Q27</td></tr>',
+'<tr><td>Bandwidth&ndash;delay / window</td><td>&mdash;</td><td>Q8, Q9</td><td>Q32</td></tr>',
+'<tr><td>Attack &rarr; control matching</td><td>Q34</td><td>Q39, Q89, Q90</td><td>Q85, Q88</td></tr>',
+'<tr><td>Resource allocation graph</td><td>Q50</td><td>&mdash;</td><td>Q94</td></tr>',
+'<tr><td>Huffman coding</td><td>Q45</td><td>&mdash;</td><td>Q51</td></tr>',
+'</tbody></table>',
+'<p><b>One verbatim repeat is confirmed:</b> 2023 Q30 and 2025 Q17 are the same question &mdash; identical grammar S &rarr; aSb | T, T &rarr; bT | b, identical options, identical answer, two years apart.</p>',
+'</div>',
+
+'<div class="card">',
+'<h2>How to use the three predicted sets</h2>',
+'<p><b>Set A &mdash; full-weight mock.</b> 30 questions in the forecast proportions. Timed diagnostic to find the weakest subject.</p>',
+'<p><b>Set B &mdash; growth areas.</b> 30 questions on Networks, security and AI/DS/Cloud, where a third of the marks now sit.</p>',
+'<p><b>Set C &mdash; likely repeats.</b> 30 questions on the templates in the table above. Highest yield if you are short of time.</p>',
+'<p style="font-size:14px;color:var(--fg-faint)"><b>What these are and are not:</b> questions written in the style, difficulty and weighting of the real papers. Not leaked, not official, and nobody can predict the actual 2026 paper. Their value is rehearsing recurring techniques.</p>',
+'<p style="font-size:14px;color:var(--fg-faint)"><b>Forecast confidence:</b> three data points is enough to distinguish a trend from noise but not enough for precision. Trust the <i>flat</i> rows most, the <i>monotonic</i> rows next, and treat the noisy rows (Software Engineering, TOC) as roughly stable. Remaining papers &mdash; 2018, 2017, 2016 and earlier &mdash; would sharpen this further.</p>',
+'</div>'
+].join("");
+
+/* Order tabs: real papers newest-first, then the predicted sets */
+(function(){
+  var order = ["y2025","y2023","y2020","p2026a","p2026b","p2026c"];
+  window.ISRO.sets.sort(function(a,b){
+    var i = order.indexOf(a.id), j = order.indexOf(b.id);
+    return (i<0?99:i) - (j<0?99:j);
+  });
+})();
